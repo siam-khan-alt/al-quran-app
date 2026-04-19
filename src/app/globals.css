@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-bg-card: var(--bg-card);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #059669;
+  --secondary: #10b981; 
+  --accent: #f0fdf4; 
+  --bg-card: #ffffff;
+  --text-main: #1f2937;
+  --text-muted: #6b7280;
+  
+  --font-amiri: 'Amiri', serif;
+  --font-lateef: 'Lateef', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --primary: #10b981; 
+  --secondary: #34d399; 
+  --accent: #020617; 
+  --bg-card: #0f172a; 
+  --text-main: #f8fafc; 
+  --text-muted: #94a3b8; 
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--accent);
+  color: var(--text-main);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dark input, .dark .bg-bg-card {
+  border: 1px solid rgba(16, 185, 129, 0.1);
+}
+
+.font-amiri { font-family: var(--font-amiri); }
+.font-lateef { font-family: var(--font-lateef); }
+
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
 }
