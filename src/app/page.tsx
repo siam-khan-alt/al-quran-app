@@ -40,8 +40,11 @@ export default function Home() {
 
   if (loading)
     return (
-      <div className="flex h-screen items-center justify-center bg-accent">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+      <div className="flex flex-col h-screen items-center justify-center bg-accent gap-4 md:gap-6">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 md:h-16 md:w-16 md:border-t-4 md:border-b-4 border-primary"></div>
+        <p className="text-primary font-bold animate-pulse text-lg">
+        সুরা লিস্ট লোড হচ্ছে...
+      </p>
       </div>
     );
 
@@ -51,7 +54,7 @@ export default function Home() {
         {/* Top Row: Logo & Mobile Settings */}
         <div className="flex items-center justify-between w-full">
           <div className="flex flex-col">
-            <h1 className="text-3xl md:text-4xl font-black text-primary flex items-center gap-2 md:gap-3 leading-tight">
+            <h1 className="text-3xl md:text-4xl font-black text-primary  flex items-center gap-2 md:gap-3 leading-tight">
               <BookOpen className="w-8 h-8 md:w-10 md:h-10" />
               <span>Al-Quran</span>
             </h1>
