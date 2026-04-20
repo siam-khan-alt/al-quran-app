@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📖 Al-Quran Web (Premium Experience) 🌙✨
 
-## Getting Started
+**Al-Quran Web** is a high-performance, minimalist, and feature-rich Holy Quran reading platform. Built with **Next.js 16 (App Router)** and **Tailwind CSS v4**, it offers a seamless reading experience with dual-language support (Bengali & English), advanced search, and full UI customization.
 
-First, run the development server:
+## 🔗 Quick Links
+- 🌐 **Live Demo:** [https://al-quran-app-psi.vercel.app/]
+- 📁 **Repository:** [https://github.com/siam-khan-alt/al-quran-app]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Visual Showcase (Light & Dark Experience)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <p><b>☀️ Home - Light Mode</b></p>
+        <img src="https://i.ibb.co.com/9HrxYMnS/image.png" alt="Home Light" height="350" />
+      </td>
+      <td align="center" width="50%">
+        <p><b>🌙 Home - Dark Mode</b></p>
+        <img src="https://i.ibb.co.com/cchf9Wcs/image.png" alt="Home Dark" height="350" />
+      </td>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <p><b>☀️ Surah Details - Light</b></p>
+        <img src="https://i.ibb.co.com/PZ4TWkYH/image.png" alt="Details Light" height="350" />
+      </td>
+      <td align="center" width="50%">
+        <p><b>🌙 Settings Panel - Dark</b></p>
+        <img src="https://i.ibb.co.com/vx1Cx3Kj/image.png" alt="Settings Dark" height="350" />
+      </td>
+    </tr>
+  </table>
+  <p><i>The app features premium glassmorphism and smooth theme transitions.</i></p>
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Key Features
 
-To learn more about Next.js, take a look at the following resources:
+### 🕋 Surah & Ayah Management
+- **Full Library:** Display all 114 Surahs with Arabic names and English meanings.
+- **SSG Powered:** Surah detail pages are generated using **Static Site Generation (SSG)** for instant loading.
+- **Uthmani Script:** Clean and beautiful Arabic text for a traditional reading feel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔍 Advanced Search
+- **Surah Filter:** Quick search on the homepage to find any Surah by its name.
+- **Ayah Search:** Real-time search inside Surah details to find ayahs through **Bengali or English** translations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ⚙️ Customizable Reading Panel (Sidebar)
+- **Bilingual Translation:** Toggle between **Bengali**, **English**, or **Both** translations.
+- **Font Customization:** Choose between multiple Arabic fonts (**Amiri** & **Lateef**).
+- **Size Adjuster:** Fine-tune Arabic and Translation font sizes via interactive sliders.
+- **Persisted Settings:** User preferences are saved using **Zustand Persistence** (localStorage).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+- **Next.js 16 (App Router):** Leveraging SSG and Server Components.
+- **Tailwind CSS v4:** Using the latest @theme variables for styling.
+- **Zustand:** Professional state management with persistence middleware.
+- **Lucide React:** Minimalist and high-quality iconography.
+- **Axios:** High-efficiency data fetching from Quran API.
+
+### Performance Optimizations
+- **Loading States:** Implemented `loading.tsx` for smooth data fetching transitions.
+- **Content Visibility:** Optimized large Surah rendering (e.g., Al-Baqarah) using `content-visibility: auto`.
+
+---
